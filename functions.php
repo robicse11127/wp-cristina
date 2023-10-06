@@ -30,12 +30,16 @@ add_action( 'after_setup_theme', 'cristina_setup' );
 function cristina_public_assets() {
 	// Register styles.
 	wp_register_style( 'bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', [], wp_rand(), 'all' );
+	wp_register_style( 'cristina-main', get_template_directory_uri() . '/assets/css/main.css', [ 'bootstrap' ], wp_rand(), 'all' );
 
 	// Register Scripts.
 	wp_register_script( 'bootstrap', get_template_directory_uri() . '/assets/js/boostrap.bundle.min.js', [ 'jquery' ], wp_rand(), true );
+	wp_register_script( 'cristina-main', get_template_directory_uri() . '/assets/js/main.js', [], wp_rand(), true );
 
 	// Enqueue Scripts.
 	wp_enqueue_style( 'bootstrap' );
+	wp_enqueue_style( 'cristina-main' );
 	wp_enqueue_script( 'bootstrap' );
+	wp_enqueue_script( 'cristina-main' );
 }
 add_action( 'wp_enqueue_scripts', 'cristina_public_assets' );
