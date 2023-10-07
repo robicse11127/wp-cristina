@@ -19,6 +19,22 @@ if ( ! function_exists( 'cristina_setup' ) ) {
 		add_theme_support( 'post-thumbnails' ); // Enable support for Post Thumbnails on posts and pages.
 		add_theme_support( 'post-formats', array( 'aside', 'gallery', 'link', 'image', 'quote', 'video', 'audio' ) ); // Add post type format support.
 
+		/**
+		 * Add support for core custom logo.
+		 */
+		add_theme_support( 'custom-logo', [
+			'height'      => 250,
+			'width'       => 250,
+			'flex-width'  => true,
+			'flex-height' => true,
+		] );
+
+		// Register manu locations.
+		register_nav_menus(
+			[
+				'primary' => esc_html__( 'Header Menu', 'cristina-yt' ),
+			]
+		);
 	}
 }
 add_action( 'after_setup_theme', 'cristina_setup' );
