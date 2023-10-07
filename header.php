@@ -13,9 +13,9 @@
 	<body <?php body_class(); ?>>
 		<!-- header section starts -->
 		<?php
-		echo $cristina_current_page_id = get_queried_object_id();
-		echo get_the_post_thumbnail_url( $cristina_current_page_id, 'full' );
+		$cristina_current_page_id = get_queried_object_id();
 		?>
+		<img alt="header image" src="<?php echo get_the_post_thumbnail_url( $cristina_current_page_id, 'full' ); ?>" />
 		<header class="cristina-header">
 			<div class="container">
 				<div class="row">
