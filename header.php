@@ -15,8 +15,7 @@
 		<?php
 		$cristina_current_page_id = get_queried_object_id();
 		?>
-		<img alt="header image" src="<?php echo get_the_post_thumbnail_url( $cristina_current_page_id, 'full' ); ?>" />
-		<header class="cristina-header">
+		<header class="cristina-header d-flex flex-column justify-content-between" style="background-image:url('<?php echo esc_url( get_the_post_thumbnail_url( $cristina_current_page_id, 'full' ) ); ?>')">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-md-6">
@@ -35,16 +34,17 @@
 							}
 						?>
 					</div>
-					<div class="col-xs-12 col-md-6">
+					<div class="col-xs-12 col-md-6 d-flex justify-content-end align-items-center">
 						<?php
 						if ( has_nav_menu( 'primary' ) ) {
 							wp_nav_menu(
 								[
-									'theme_location' => 'primary',
-									'container' => false,
-									'menu_class' => '',
-									'menu_id' => '',
-									'depth' => 2
+									'theme_location'  => 'primary',
+									'container'       => 'nav',
+									'container_class' => 'cristina-header-nav',
+									'menu_class'      => 'cristina-header-menu',
+									'menu_id'         => '',
+									'depth'           => 2
 								]
 							);
 						} else {
@@ -57,8 +57,12 @@
 						?>
 					</div>
 				</div>
+			</div>
+			<div class="container">
 				<div class="row">
-					<div class="col-xs-12"><?php echo single_post_title(); ?></div>
+					<div class="col-xs-12">
+						<h1 class="cristina-page-title text-center"><?php echo esc_html__( single_post_title(), 'cristina-yt' ); ?></h1>
+					</div>
 				</div>
 			</div>
 		</header>

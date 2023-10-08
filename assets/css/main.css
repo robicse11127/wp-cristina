@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;400;700&family=Poppins:wght@600&display=swap');
 
 :root {
 	--font-primary: 'Montserrat', sans-serif;
 	--font-secondary: 'Poppins', sans-serif;
+	--font-curvy: 'Dancing Script', cursive;
 
 	--text-color-primary: #000;
 	--text-color-secondary: #6e6e6e;
@@ -28,4 +29,52 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: var( --font-secondary );
+}
+
+/* Header */
+.cristina-header {
+	width: 100%;
+	height: 550px;
+	position: relative;
+	z-index: 0;
+	padding: 70px 0;
+	background: var(--color-primary);
+}
+
+.cristina-header-menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.cristina-header-menu .menu-item a {
+	position: relative;
+	display: inline-block;
+	text-transform: lowercase;
+	margin-left: 50px;
+	text-decoration: none;
+	color: var(--text-color-white);
+	font-family: inherit;
+	font-size: 1rem;
+	font-weight: 300;
+	z-index: 0;
+}
+.cristina-header-menu .menu-item a::after {
+	content: '.';
+	position: absolute;
+	z-index: 10;
+	color: var(--text-color-white);
+	bottom: 0;
+	right: -5px;
+}
+.cristina-header-menu .menu-item.current-menu-item a {
+	font-weight: 700;
+}
+.cristina-page-title {
+	font-family: var(--font-curvy);
+	font-size: 7.5rem;
+	line-height: 1;
+	color: var(--text-color-white);
 }
