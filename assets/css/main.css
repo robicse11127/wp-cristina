@@ -47,6 +47,8 @@ h1, h2, h3, h4, h5, h6 {
 	z-index: 0;
 	padding: 70px 0;
 	background: var(--color-primary);
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 .cristina-header-menu {
@@ -99,12 +101,12 @@ h1, h2, h3, h4, h5, h6 {
 .cristina-post-thumbnail img {
 	width: 100%;
 	object-fit: cover;
-	object-position: center;
+	object-position: bottom;
 }
 .cristina-post-content {
 	width: 100%;
 	background: var(--color-white);
-	padding: 30px;
+	padding: 20px 30px;
 }
 .cristina-post-title a {
 	font-family: var(--font-secondary);
