@@ -59,3 +59,16 @@ function cristina_public_assets() {
 	wp_enqueue_script( 'cristina-main' );
 }
 add_action( 'wp_enqueue_scripts', 'cristina_public_assets' );
+
+// Add widgets.
+function cristina_theme_widgets() {
+	register_sidebar( [
+		'name'          => __( 'Footer Widget', 'cristina-yt' ),
+		'id'            => 'cristina-footer-wdg',
+		'before_widget' => '',
+		'after_widget'  => '',
+		'before_title'  => '',
+		'after_title'   => ''
+	] );
+}
+add_action( 'widgets_init', 'cristina_theme_widgets' );

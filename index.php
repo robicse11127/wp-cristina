@@ -15,6 +15,18 @@ get_header();
 							the_post();
 							get_template_part( 'template-parts/post/content', get_post_format() );
 						}
+
+					?>
+					<div class="cristina-pagination">
+						<?php
+							// Paginations.
+						echo paginate_links( [
+							'prev_text' => esc_html__( 'Previous', 'cristina-yt' ),
+							'next_text' => esc_html__( 'Next', 'cristina-yt' )
+						] );
+						?>
+					</div>
+					<?php
 					} else {
 						// DO something
 					}
