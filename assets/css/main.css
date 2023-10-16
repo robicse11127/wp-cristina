@@ -153,3 +153,50 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 28px;
 	text-decoration: none;
 }
+/* Pagination style */
+.cristina-pagination {
+	width: 100%;
+	height: auto;
+}
+.page-numbers {
+	display: inline-block;
+	width: auto;
+	padding: 7px 15px;
+	margin: 0 5px;
+	background: var(--color-white);
+	color: var(--text-color-primary);
+	text-decoration: none;
+}
+.page-numbers.current {
+	font-weight: 600;
+	background: var(--color-primary);
+	color: var(--text-color-white);
+}
+.page-numbers:hover {
+	text-decoration: underline;
+}
+.page-numbers.current:hover {
+	text-decoration: none;
+}
+
+/* Footer Style */
+.cristina-footer-area {
+	width: 100%;
+	min-height: 60px;
+	background: var(--color-white);
+	color: var(--text-color-primary);
+	font-family: var(--font-primary);
+	font-size: 0.875rem;
+	font-weight: 400;
+	line-height: 28px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.cristina-footer-area p {
+	margin: 0;
+}
+.cristina-footer-area a {
+	text-decoration: none;
+	font-weight: 600;
+}
