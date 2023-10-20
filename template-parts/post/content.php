@@ -4,21 +4,6 @@
  */
 ?>
 <article id="post-<?php the_ID(); ?>" class="cristina-post-article col-sm-12 col-md-4">
-
-	<!-- <figure class="cristina-post-thumbnail"></figure>
-	<h4 class="cristina-post-title"><a href="#">Post Title</a></h4>
-	<div class="cristina-post-metas">
-		<span class="cristina-post-term">In: Fitness</span>
-		<span class="cristina-post-date">Date: 09 Oct, 2023</span>
-		<span class="cristina-post-tern">By: A. Nancy</span>
-	</div>
-
-	<div class="cristina-post-excerpt">
-		Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi debitis omnis cumque aliquid temporibus est modi nostrum quia quo rem, dolor consequuntur, maiores reiciendis rerum reprehenderit fuga dolorum maxime esse.
-	</div>
-
-	<a href="#" class="cristina-post-readmore">Read More</a> -->
-
 	<?php
 		// Post thumbnail.
 		printf(

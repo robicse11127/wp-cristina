@@ -49,7 +49,7 @@ function cristina_public_assets() {
 	wp_register_style( 'cristina-main', get_template_directory_uri() . '/assets/css/main.css', [ 'bootstrap' ], wp_rand(), 'all' );
 
 	// Register Scripts.
-	wp_register_script( 'bootstrap', get_template_directory_uri() . '/assets/js/boostrap.bundle.min.js', [ 'jquery' ], wp_rand(), true );
+	wp_register_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.bundle.min.js', [ 'jquery' ], wp_rand(), true );
 	wp_register_script( 'cristina-main', get_template_directory_uri() . '/assets/js/main.js', [], wp_rand(), true );
 
 	// Enqueue Scripts.
