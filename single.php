@@ -14,12 +14,21 @@ get_header();
 						get_template_part( 'template-parts/post/content', 'single' );
 					}
 				}
-
-				// If comments are open them we can show the comment template.
-				if ( comments_open() || get_comments_number() ) {
-					comments_template();
-				}
 			?>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="cristina-post-comments mt-5">
+							<?php
+							// If comments are open them we can show the comment template.
+							if ( comments_open() || get_comments_number() ) {
+								comments_template();
+							}
+							?>
+						</div>
+					</div>
+				</div>
 			</div>
 		</main>
 	</div>
