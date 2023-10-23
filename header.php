@@ -68,6 +68,12 @@
 						<h1 class="cristina-page-title text-center"><?php echo esc_html__( single_post_title(), 'cristina-yt' ); ?></h1>
 					</div>
 					<?php
+					elseif ( is_category() || is_author() || is_tag() ) :
+					?>
+					<div class="col-xs-12">
+						<h1 class="cristina-page-title text-center"><?php echo wp_kses( get_the_archive_title(), [ 'span' => [] ] ); ?></h1>
+					</div>
+					<?php
 					elseif( is_singular() ):
 					?>
 						<div class="col-xs-12">
@@ -102,6 +108,10 @@
 								?>
 							</div>
 						</div>
+					<?php
+					elseif( is_404() ) :
+						?>
+						<h1 class="cristina-page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'cristina-yt' ); ?></h1>
 					<?php
 					endif;
 					?>

@@ -32,19 +32,19 @@
 					wp_kses_post( $terms, 'cristina-yt' )
 				);
 
+				// Post author.
+				printf(
+					'<span class="cristina-post-tern">%1$s: %2$s</span>',
+					esc_html__( 'By', 'cristina-yt' ),
+					wp_kses_post( get_the_author_posts_link() )
+				);
+
 				// Post date.
 				printf(
 					'<span class="cristina-post-date">%1$s: 09 Oct, 2023</span>',
 					esc_html__( 'Date', 'cristina-yt' ),
 					esc_html__( get_the_date(), 'cristina-yt' )
 
-				);
-
-				// Post author.
-				printf(
-					'<span class="cristina-post-tern">%1$s: %2$s</span>',
-					esc_html__( 'By', 'cristina-yt' ),
-					wp_kses_post( get_the_author_link() )
 				);
 			?>
 		</div>
