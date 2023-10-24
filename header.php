@@ -97,6 +97,10 @@
 							?>
 						</div>
 					<?php
+					elseif( is_404() ) :
+						?>
+						<h1 class="cristina-page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'cristina-yt' ); ?></h1>
+						<?php
 					else :
 						// Do something else
 
