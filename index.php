@@ -26,7 +26,7 @@ get_header();
 					</div>
 					<?php
 					} else {
-						get_template_part( 'template-parts/post/content', 'none' );
+						get_template_part( 'template-parts/page/content', 'none' );
 					}
 					?>
 				</div>
