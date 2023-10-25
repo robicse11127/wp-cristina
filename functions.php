@@ -18,6 +18,7 @@ if ( ! function_exists( 'cristina_setup' ) ) {
 		add_theme_support( 'title-tag' ); // Let WordPress manage the document title.
 		add_theme_support( 'post-thumbnails' ); // Enable support for Post Thumbnails on posts and pages.
 		add_theme_support( 'post-formats', array( 'aside', 'gallery', 'link', 'image', 'quote', 'video', 'audio' ) ); // Add post type format support.
+		add_theme_support( 'html5', [ 'search-form' ] );
 		/**
 		 * Add support for core custom logo.
 		 */

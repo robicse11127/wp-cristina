@@ -113,6 +113,10 @@
 						?>
 						<h1 class="cristina-page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'cristina-yt' ); ?></h1>
 					<?php
+					elseif ( is_search() ) :
+						?>
+						<h1 class="cristina-page-title"><?php wp_title(); ?></h1>
+						<?php
 					endif;
 					?>
 				</div>
