@@ -73,3 +73,8 @@ function cristina_theme_widgets() {
 	] );
 }
 add_action( 'widgets_init', 'cristina_theme_widgets' );
+
+/**
+ * Load Required Files.
+ */
+require_once get_template_directory() . '/inc/template-functions.php';

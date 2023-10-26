@@ -7,6 +7,11 @@ get_header();
 	<div id="primary" class="cristina-content-area">
 		<main id="main" class="cristina-site-main">
 			<div class="container">
+				<div class="row">
+					<div class="col-md-12 mb-4 cristina-search-form">
+						<?php echo get_search_form(); ?>
+					</div>
+				</div>
 				<div class="row gy-4">
 					<?php
 					if ( have_posts() ) {

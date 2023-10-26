@@ -4,7 +4,6 @@
  */
 get_header();
 ?>
-
 	<div id="primary" class="cristina-content-area">
 		<main id="main" class="cristina-site-main">
 			<div class="container">
