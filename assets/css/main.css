@@ -112,6 +112,9 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 1;
 	color: var(--text-color-white);
 }
+.cristina-search-page-title {
+	font-size: 4.5rem;
+}
 
 /* Post Articles */
 .cristina-content-area {
@@ -143,10 +146,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .cristina-post-metas span,
 .cristina-post-metas span a {
+	display: inline-block;
 	font-family: var(--font-secondary);
 	font-size: .75rem;
 	font-weight: 300;
 	color: var(--text-color-secondary);
+	margin-right: 10px;
 }
 .cristina-post-metas span a {
 	font-weight: 600;
@@ -316,4 +321,28 @@ h1, h2, h3, h4, h5, h6 {
 .cristina-post-comments .comment-form p.form-submit input:hover {
 	background-color: var(--color-white);
 	color: var(--text-color-primary);
+}
+/* Search Form */
+.cristina-search-form form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.cristina-search-form form label {
+	width: 100%;
+}
+.cristina-search-form form input[class="search-field"] {
+	width: 100%;
+	padding: 5px 10px;
+	border: 1px solid #bdbdbd;
+	outline: 0;
+}
+.cristina-search-form form input[class="search-submit"] {
+	padding: 5px 10px;
+	margin-left: 10px;
+	border: 1px solid var(--color-primary);
+	background-color: var(--color-primary);
+	color: var(--color-white);
+	outline: 0;
+	box-shadow: none;
 }
