@@ -7,6 +7,7 @@ get_header();
 <div id="primary" class="cristina-content-area">
 	<main id="main" class="cristina-site-main">
 		<div class="container">
+			<?php get_template_part( 'template-parts/partials/search-form' ); ?>
 			<div class="row gy-4">
 				<?php
 					if ( have_posts() ) {

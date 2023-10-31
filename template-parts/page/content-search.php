@@ -15,27 +15,8 @@
 		?>
 		<div class="cristina-post-metas d-flex mb-2">
 			<?php
-				// Post terms.
-				$terms = get_the_term_list( get_the_ID(), 'category', '', ', ' );
-				printf(
-					'<span class="cristina-post-terms">%1$s: %2$s</span>',
-					esc_html__( 'In', 'cristina-yt' ),
-					wp_kses_post( $terms )
-				);
-
-				// Post author.
-				printf(
-					'<span class="cristina-post-author">%1$s: %2$s</span>',
-					esc_html__( 'By', 'cristina-yt' ),
-					wp_kses_post( get_the_author_posts_link() )
-				);
-
-				// Post Date.
-				printf(
-					'<span class="cristina-post-date">%1$s: %2$s</span>',
-					esc_html__( 'On', 'cristina-yt' ),
-					esc_html__( get_the_date(), 'cristina-yt' )
-				);
+				// Generate post metas.
+				cristina_post_metas();
 			?>
 		</div>
 		<?php
