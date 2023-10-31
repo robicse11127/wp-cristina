@@ -20,7 +20,6 @@ get_header();
 							the_post();
 							get_template_part( 'template-parts/post/content', get_post_format() );
 						}
-						wp_reset_postdata();
 					?>
 					<div class="cristina-pagination">
 						<?php
@@ -35,6 +34,8 @@ get_header();
 					} else {
 						get_template_part( 'template-parts/page/content', 'none' );
 					}
+
+					wp_reset_postdata();
 					?>
 				</div>
 			</div>

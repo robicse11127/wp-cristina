@@ -29,6 +29,11 @@ if ( ! function_exists( 'cristina_setup' ) ) {
 			'flex-height' => true,
 		] );
 
+		// Add support for woocommerce.
+		add_theme_support( 'woocommerce' );
+		add_theme_support( 'wc-product-gallery-zoom' );
+		add_theme_support( 'wc-product-gallery-lightbox' );
+
 		// Register menu locations.
 		register_nav_menus(
 			[

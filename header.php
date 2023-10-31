@@ -12,11 +12,7 @@
 	</head>
 	<body <?php body_class(); ?>>
 		<!-- header section starts -->
-		<?php
-		global $post;
-		$cristina_current_page_id = get_queried_object_id();
-		?>
-		<header class="cristina-header d-flex flex-column justify-content-between" style="background-image:url('<?php echo esc_url( get_the_post_thumbnail_url( $cristina_current_page_id, 'full' ) ); ?>')">
+		<header class="cristina-header d-flex flex-column justify-content-between" style="background-image:url('<?php echo esc_url( cristina_header_image() ); ?>')">
 			<!-- Header logo & menus -->
 			<div class="container">
 				<div class="row">
