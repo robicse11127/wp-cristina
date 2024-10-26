@@ -19,6 +19,12 @@
 				<h1 class="cristina-page-title text-center"><?php echo wp_kses( get_the_archive_title(), [ 'span' => [] ] ); ?></h1>
 			</div>
 		<?php
+		elseif( is_shop() ) :
+		?>
+			<div class="col-xs-12">
+				<h1 class="cristina-page-title text-center"><?php woocommerce_page_title(); ?></h1>
+			</div>
+		<?php
 		elseif( is_singular() ) :
 		?>
 			<div class="col-xs-12">
