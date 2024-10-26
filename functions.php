@@ -29,8 +29,6 @@ if ( ! function_exists( 'cristina_setup' ) ) {
 			'flex-height' => true,
 		] );
 
-		remove_theme_support( 'woocommerce' );
-
 		// Register manu locations.
 		register_nav_menus(
 			[
@@ -77,3 +75,6 @@ add_action( 'widgets_init', 'cristina_theme_widgets' );
 
 // Load template functions.
 require_once get_template_directory(  ) . '/inc/template-functions.php';
+
+// Load WooCommerce functions.
+require_once get_template_directory(  ) . '/inc/class-woo-hooks.php';
