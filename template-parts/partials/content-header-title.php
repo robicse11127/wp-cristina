@@ -25,7 +25,7 @@
 				<h1 class="cristina-page-title text-center"><?php woocommerce_page_title(); ?></h1>
 			</div>
 		<?php
-		elseif( is_singular() ) :
+		elseif( is_singular() && ! is_product() ) :
 		?>
 			<div class="col-xs-12">
 				<h1 class="cristina-single-page-title"><?php echo esc_html__( single_post_title(), 'cristina-yt' ); ?></h1>

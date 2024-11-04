@@ -11,7 +11,7 @@
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
-		<header class="cristina-header d-flex flex-column justify-content-between" style="background-image: url(<?php echo esc_url( cristina_header_image() ); ?>)">
+		<header class="cristina-header d-flex flex-column justify-content-between" style="background-image: url(<?php if ( function_exists('is_product') && ! is_product() ) echo esc_url( cristina_header_image() ); ?>)">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">

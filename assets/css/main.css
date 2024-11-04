@@ -346,3 +346,19 @@ h1, h2, h3, h4, h5, h6 {
 	outline: 0;
 	box-shadow: none;
 }
+.single-product .cristina-header {
+	height: 120px;
+	padding: 30px 0;
+}
+
+/* Css Fix for single product page image gallery thumbnails. */
+.woocommerce div.product div.images .flex-control-thumbs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.woocommerce div.product div.images .flex-control-thumbs li {
+    flex: 1 1 calc(100% / 6); /* Max 6 items per row */
+    max-width: calc(100% / 6); /* Ensures each item takes up 1/6th of the row */
+    box-sizing: border-box;
+}
